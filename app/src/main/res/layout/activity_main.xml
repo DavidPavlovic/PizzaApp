@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pizza_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="67dp"
+            android:background="#8C000000"
+            android:paddingLeft="16dp"
+            android:src="@drawable/pizzalogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#8C000000"
+            android:gravity="right"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="Rowayton Pizza!"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/locImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loc" />
+
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locImg"
+        android:layout_margin="16dp"
+        android:text="Adress: 104 Rowayton Ave Norwalk, CT 06853"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adress"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Phone: (203) 853-7555 "
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_margin="16dp"
+        android:text="Email: info@rowaytonpizzamenu.com"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/email"
+        android:src="@drawable/pizza" />
+
+</RelativeLayout>
